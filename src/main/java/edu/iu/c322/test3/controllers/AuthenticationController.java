@@ -22,6 +22,7 @@ public class AuthenticationController {
         this.tokenService = tokenService;
         this.customerRepository = customerRepository;
     }
+
     @PostMapping("/signup")
     public void signup(@RequestBody Customer customer) {
         try {
